@@ -1,6 +1,8 @@
 AKILES 2D
 =========
 
+[![DOI](https://zenodo.org/badge/113689280.svg)](https://zenodo.org/badge/latestdoi/113689280)
+
 Matlab implementation of the kinetic plasma plume model described in
 M. Merino et al., "Direct-Vlasov Study of Electron Cooling Mechanisms
 in Paraxial, Unmagnetized Plasma Thruster Plumes," IEPC-2017-104.
@@ -95,13 +97,7 @@ iterative solution process by akiles2d.
 after converging to the self-consitent solutions are stored here.
 * `+potential`: Some convenience functions for computing the potential `phi`
 for each potential model.
-
-## Documentation
-
-A user/developer manual can be found in the `doc` subdirectory.  Any questions
-about the operation or development of Akiles2d should be directed to [Mario
-Merino](http://mariomerino.uc3m.es/).
-
+ 
 ### Testing
 
 Unit tests are found in the `/test` subdirectory. After adding the package to
@@ -114,6 +110,18 @@ If you have any comments for improvement or
 are interested in contributing to the continued 
 development of this or any of my other codes, you can contact us through 
 [Mario's website](http://mariomerino.uc3m.es/).
+
+
+## Acknowledging 
+
+This program is the result of substantial effort by us. It is released as open
+source in the hope that it will be useful to other people. If you find it
+useful and/or use it in any of your works, I kindly ask you to acknowledge it
+by citing the main article of the Akiles2d model,
+and/or citing the code directly as:
+
+> Mario Merino, Javier Mauriño (2017). Akiles2d code: Advanced Kinetic 
+Iterative pLasma Expansion Solver 2D, DOI: 10.5281/zenodo.1098433
  
 ## License
 
