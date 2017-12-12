@@ -23,8 +23,10 @@ phibracket = data.solver.phibracket;
 %% New ne00p
 solution.ne00p = solution.ne00p - solution.errorfcn(1)/(solution.errorfcn(1)-1)*solution.ne00p;
  
-for i = length(solution.phi):-1:2
-    solution.phi(i) = fzero(@(phii)adapted_errorfcn(data,solution,phii,i),phibracket); 
+for i = 2:length(solution.phi)
+    try
+        solution.phi(i) = fzero(@(phii)adapted_errorfcn(data,solution,phii,i),phibracket);  
+    end
 end
 
 %% Compute new error

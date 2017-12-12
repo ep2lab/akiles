@@ -52,3 +52,5 @@ if evr == 0 && evtheta == 0
     moment = ni.*uz.^evz; 
 end
 moment1 = moment; % all ions are free
+
+

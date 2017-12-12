@@ -31,7 +31,7 @@ data.ions.mu = Inf; % dimensionless ion mass. Set to Inf for hypersonic limit
 %% Electrons 
 data.electrons.model = 'semimaxwellian'; % the electron model to use
 data.electrons.nintegrationpoints = [500,300]; % Number of points to use in E' integration. The first number is for E' less than the a transition value (linspaced points). The second is for E' larger than that (logspaced points).
-data.electrons.alpha = 0.08; % filling parameter for doubly-trapped regions
+data.electrons.alpha = 1; % filling parameter for doubly-trapped regions
  
 %% Initial guess
 data.guess.npoints = 500; % number of points in the solution vector. First point must be origin. Last point must be infinity.
@@ -42,7 +42,7 @@ data.guess.phi = linspace(0,-4,data.guess.npoints).'; % column; potential at eac
 data.guess.ne00p = 0.51; % density of the (vz > 0) electrons at the origin
  
 %% Solver
-data.solver.phibracket = [-10,4]; % allowed range to search for phi at each point
+data.solver.phibracket = [-10,0.1]; % allowed range to search for phi at each point
 
 %% Postprocessor
 data.postprocessor.postfunctions = {'moments'}; % Cell array with the names of postprocessor functions to run after iteration process

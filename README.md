@@ -121,7 +121,7 @@ by citing the main article of the Akiles2d model,
 and/or citing the code directly as:
 
 > Mario Merino, Javier Mauriño (2017). Akiles2d code: Advanced Kinetic 
-Iterative pLasma Expansion Solver 2D, DOI: 10.5281/zenodo.1098433
+Iterative pLasma Expansion Solver 2D, DOI: 10.5281/zenodo.1098432
  
 ## License
 
