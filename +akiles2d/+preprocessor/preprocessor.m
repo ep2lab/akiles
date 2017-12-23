@@ -21,9 +21,13 @@ data = akiles2d.simrc;
 % simrcfile overwrites defaults
 if exist('simrcfile','var') && ~isempty(simrcfile)
     [simrcfilepath,simrcfilename] = fileparts(simrcfile); 
-    currentdir = cd(simrcfilepath);
+    if ~isempty(simrcfilepath)
+        currentdir = cd(simrcfilepath);
+    end
     usersimrc = str2func(simrcfilename);
-    cd(currentdir);
+    if ~isempty(simrcfilepath)
+        cd(currentdir);
+    end
     data = usersimrc(data);
 end
 

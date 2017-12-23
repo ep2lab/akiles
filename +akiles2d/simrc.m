@@ -45,4 +45,4 @@ data.guess.ne00p = 0.51; % density of the (vz > 0) electrons at the origin
 data.solver.phibracket = [-10,0.1]; % allowed range to search for phi at each point
 
 %% Postprocessor
-data.postprocessor.postfunctions = {'moments'}; % Cell array with the names of postprocessor functions to run after iteration process
+data.postprocessor.postfunctions = {'moments','EEDF'}; % Cell array with the names of postprocessor functions to run after iteration process

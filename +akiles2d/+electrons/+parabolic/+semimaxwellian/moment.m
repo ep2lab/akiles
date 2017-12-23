@@ -112,8 +112,4 @@ else
     moment2 = moment1.*0;
     moment4 = moment1.*0;
 end
-moment = moment1 + moment2 + moment4;
-
-
-
-
+moment = moment1 + moment2 + moment4; 
