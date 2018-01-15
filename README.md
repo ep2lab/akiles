@@ -3,6 +3,8 @@ AKILES 2D
 
 [![DOI](https://zenodo.org/badge/113689280.svg)](https://zenodo.org/badge/latestdoi/113689280)
 
+![Akiles logo](/docs/logo.png)
+
 Matlab implementation of the kinetic plasma plume model described in
 M. Merino et al., "Direct-Vlasov Study of Electron Cooling Mechanisms
 in Paraxial, Unmagnetized Plasma Thruster Plumes," IEPC-2017-104.
