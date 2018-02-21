@@ -106,6 +106,15 @@ Unit tests are found in the `/test` subdirectory. After adding the package to
 your Matlab path, you can run all tests by executing `runtests` from this 
 subdirectory.
 
+### Development of features
+
+Currently, the usage of test points out of the plume axis is not fully 
+implemented. Therefore, the input vector r must be zero, or an error will be 
+thrown.
+
+Future developments will add the moment integrals for other EVDFs than 
+semi-Maxwelllian.
+
 ## Contributing
 
 If you have any comments for improvement or 
