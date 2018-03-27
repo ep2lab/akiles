@@ -6,12 +6,12 @@ AKILES 2D
 ![Akiles logo](/docs/logo.png)
 
 Matlab implementation of the kinetic plasma plume model described in
-M. Merino et al., "Direct-Vlasov Study of Electron Cooling Mechanisms
-in Paraxial, Unmagnetized Plasma Thruster Plumes," IEPC-2017-104.
+M. Merino et al., "Kinetic electron model for plasma thruster plumes," 
+2018 Plasma Sources Sci. Technol. 27 035013.
 The name Akiles2d stands for "Advanced Kinetic 
 Iterative pLasma Expansion Solver 2D."
 
-The first version of this code has been funded by ESA under contract 
+The development of the first version of this code was carried out under ESA contract 
 4000116180/15/NL/PS. It has been developed by Mario Merino and Javier
 Mauriño, the latter during a research visit to the [EP2](http:\\ep2.uc3m.es)
 group at UC3M, funded by a UK Royal Academy of Engineering Engineering Leaders
@@ -128,11 +128,15 @@ development of this or any of my other codes, you can contact us through
 This program is the result of substantial effort by us. It is released as open
 source in the hope that it will be useful to other people. If you find it
 useful and/or use it in any of your works, I kindly ask you to acknowledge it
-by citing the main article of the Akiles2d model,
-and/or citing the code directly as:
+by citing the code directly as:
 
 > Mario Merino, Javier Mauriño (2017). Akiles2d code: Advanced Kinetic 
 Iterative pLasma Expansion Solver 2D, DOI: 10.5281/zenodo.1098432
+ 
+and/or citing the main article of the Akiles2d model,
+
+> Mario Merino, Javier Mauriño, Eduardo Ahedo, *Kinetic electron model for plasma thruster plumes*, 
+Plasma Sources Science and Technoogy 27 035013 (2018) [LINK](http://doi.org/10.1088/1361-6595/aab3a1).
  
 ## License
 
