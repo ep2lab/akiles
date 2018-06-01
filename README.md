@@ -1,14 +1,13 @@
-AKILES 2D
-=========
+# AKILES 2D
 
-[![DOI](https://zenodo.org/badge/113689280.svg)](https://zenodo.org/badge/latestdoi/113689280)
+![DOI](https://zenodo.org/badge/113689280.svg)](https://zenodo.org/badge/latestdoi/113689280)
 
-![Akiles logo](/docs/logo.png)
+![Akiles logo](docs/logo.png)
 
-Akiles is the 
+Akiles is the
 Matlab implementation of the kinetic plasma plume model described in
-M. Merino et al., "Kinetic electron model for plasma thruster plumes," Plasma Sources Science and Technology 27, 035013 (2018). 
-The code allows to compute the electric potential and 
+M. Merino et al., "Kinetic electron model for plasma thruster plumes," Plasma Sources Science and Technology 27, 035013 (2018).
+The code allows to compute the electric potential and
 the electron distribution function in a paraxial, collisonless plume and compute any moment of the distribution function.
 The name Akiles2d stands for "Advanced Kinetic Iterative pLasma Expansion Solver 2D."
 
@@ -18,12 +17,7 @@ Mauriño, the latter during a research visit to the [EP2](http:\\ep2.uc3m.es)
 group at UC3M, funded by a UK Royal Academy of Engineering Engineering Leaders
 Scholarship (ELAA1516/1/87).
 
-Akiles2d solves iteratively for the electric potential and the EVDF weight in
-a paraxial, unmagnetized, steady-state plasma plume to satisfy quasineutrality
-and a global condition on the net electric current. It can be readily used for
-magnetized plumes in magnetic nozzles as well. After successful convergence to
-the self-consistent solution, the Akiles2d computes the most frequently used
-moments of the ion and electron distribution functions.
+Akiles2d solves iteratively for the electric potential and the EVDF weight in a paraxial, unmagnetized, steady-state plasma plume to satisfy quasineutrality and a global condition on the net electric current. It can be readily used for magnetized plumes in magnetic nozzles as well. After successful convergence to the self-consistent solution, the Akiles2d computes the most frequently used moments of the ion and electron distribution functions.
 
 Currently, only the radially-parabolic electric potential and the
 semi-Maxwellian electron distribution upstream are implemented, but the code
@@ -52,10 +46,9 @@ This function performs a complete simulation, including the call to the
 preprocessor, the solver, and the postprocessor. All file writing
 and message logging operations are done in this function.
 
-To run Akiles2d without any user inputs, simply add the base directory
-to the Matlab path and run:
+To run Akiles2d without any user inputs, simply add the base directory to the Matlab path and run:
 
-```Matlab
+```text
 [data, solution] = akiles2d.akiles2d();
 ```
 
@@ -131,12 +124,12 @@ useful and/or use it in any of your works, I kindly ask you to acknowledge it
 by citing the main article of the Akiles2d model,
 
 > Mario Merino, Javier Mauriño, Eduardo Ahedo, 
-"Kinetic electron model for plasma thruster plumes," Plasma Sources Science and Technology 27, 035013 (2018), (DOI: 10.1088/1361-6595/aab3a1)[https://doi.org/10.1088/1361-6595/aab3a1]
+"Kinetic electron model for plasma thruster plumes," Plasma Sources Science and Technology 27, 035013 (2018), [DOI: 10.1088/1361-6595/aab3a1](https://doi.org/10.1088/1361-6595/aab3a1)
 
 and/or citing the code directly as:
 
 > Mario Merino, Javier Mauriño (2017). Akiles2d code: Advanced Kinetic
-Iterative pLasma Expansion Solver 2D, (DOI: 10.5281/zenodo.1098432)[https://doi.org/10.5281/zenodo.1098432]
+Iterative pLasma Expansion Solver 2D, [DOI: 10.5281/zenodo.1098432](https://doi.org/10.5281/zenodo.1098432)
 
 ## License
 
