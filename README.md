@@ -26,7 +26,7 @@ is structured to allow easy extension to other cases.
 ## Installation
 
 Installation requires simply that you
-[download Akiles2d](https://github.com/mariomerinomartinez/akiles2d/archive/master.zip)
+[download Akiles2d](https://github.com/ep2lab/akiles/archive/master.zip)
 and add the base directory (the one that contains the `+akiles2d` directory)
 to your Matlab path.
 
@@ -36,7 +36,7 @@ A recent version of Matlab is needed to run the code.
 Akiles2d has been developed in Matlab R2016b Academic version.
 
 Akiles2d depends on other Matlab packages that you can download from this
-GitHub account: [logger](https://github.com/mariomerinomartinez/logger). These
+GitHub account: [logger](https://github.com/ep2lab/logger). These
 packages must be installed and in your Matlab path to run Akiles2d.
 
 ## Quick usage guide
