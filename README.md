@@ -107,20 +107,22 @@ implemented. Therefore, the input vector r must be zero, or an error will be
 thrown.
 
 Future developments will add the moment integrals for other EVDFs than
-semi-Maxwelllian.
+semi-Maxwelllian, and proper documentation.
 
 ## Contributing
 
-If you have any comments for improvement or
-are interested in contributing to the continued
-development of this or any of my other codes, you can contact us through
-[Mario's website](http://mariomerino.uc3m.es/).
+If you have any comments for improvement or 
+are interested in contributing to the continued 
+development of this or any of my other codes, you can contact us
+through our [website](http://ep2.uc3m.es/). 
+
+For updates and news, follow us on Twitter: [@ep2lab.](https://twitter.com/ep2lab).
 
 ## Acknowledging
 
 This program is the result of substantial effort by us. It is released as open
 source in the hope that it will be useful to other people. If you find it
-useful and/or use it in any of your works, I kindly ask you to acknowledge it
+useful and/or use it in any of your works, we kindly ask you to acknowledge it
 by citing the main article of the Akiles2d model,
 
 > Mario Merino, Javier Mauriño, Eduardo Ahedo, 
