@@ -2,7 +2,7 @@
 
 ![DOI](https://zenodo.org/badge/113689280.svg)](https://zenodo.org/badge/latestdoi/113689280)
 
-![Akiles logo](docs/logo.png)
+![Akiles logo](docs/logo.png) 
 
 Akiles is the
 Matlab implementation of the kinetic plasma plume model described in
@@ -111,10 +111,10 @@ semi-Maxwelllian, and proper documentation.
 
 ## Contributing
 
-If you have any comments for improvement or 
-are interested in contributing to the continued 
+If you have any comments for improvement or
+are interested in contributing to the continued
 development of this or any of my other codes, you can contact us
-through our [website](http://ep2.uc3m.es/). 
+through our [website](http://ep2.uc3m.es/).
 
 For updates and news, follow us on Twitter: [@ep2lab.](https://twitter.com/ep2lab).
 
@@ -125,7 +125,7 @@ source in the hope that it will be useful to other people. If you find it
 useful and/or use it in any of your works, we kindly ask you to acknowledge it
 by citing the main article of the Akiles2d model,
 
-> Mario Merino, Javier Mauriño, Eduardo Ahedo, 
+> Mario Merino, Javier Mauriño, Eduardo Ahedo,
 "Kinetic electron model for plasma thruster plumes," Plasma Sources Science and Technology 27, 035013 (2018), [DOI: 10.1088/1361-6595/aab3a1](https://doi.org/10.1088/1361-6595/aab3a1)
 
 and/or citing the code directly as:
