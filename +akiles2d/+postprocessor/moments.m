@@ -47,9 +47,9 @@ for il = 1:length(ll)
     % Axial flux of axial heat
     solution.electrons.(['qzz',l]) = 1/2*solution.electrons.(['M300',l]) - 3/2*solution.electrons.(['n',l]).*solution.electrons.(['u',l]).*solution.electrons.(['Tz',l]) - 1/2*solution.electrons.(['n',l]).*solution.electrons.(['u',l]).^3;
     % Axial flux of radial heat
-    solution.electrons.(['qzr',l]) = 1/2*solution.electrons.(['M120',l]) - 3/2*solution.electrons.(['n',l]).*solution.electrons.(['u',l]).*solution.electrons.(['Tr',l]);
+    solution.electrons.(['qzr',l]) = 1/2*solution.electrons.(['M120',l]) - 1/2*solution.electrons.(['n',l]).*solution.electrons.(['u',l]).*solution.electrons.(['Tr',l]);
     % Axial flux of azimuthal heat
-    solution.electrons.(['qztheta',l]) = 1/2*solution.electrons.(['M102',l]) - 3/2*solution.electrons.(['n',l]).*solution.electrons.(['u',l]).*solution.electrons.(['Ttheta',l]);
+    solution.electrons.(['qztheta',l]) = 1/2*solution.electrons.(['M102',l]) - 1/2*solution.electrons.(['n',l]).*solution.electrons.(['u',l]).*solution.electrons.(['Ttheta',l]);
 end
    
 %% Basic ion moments
@@ -88,9 +88,9 @@ for il = 1:length(ll)
     % Axial flux of axial heat
     solution.ions.(['qzz',l]) = 1/2*solution.ions.(['M300',l]) - 3/2*solution.ions.(['n',l]).*solution.ions.(['u',l]).*solution.ions.(['Tz',l]) - 1/2*solution.ions.(['n',l]).*solution.ions.(['u',l]).^3;
     % Axial flux of radial heat
-    solution.ions.(['qzr',l]) = 1/2*solution.ions.(['M120',l]) - 3/2*solution.ions.(['n',l]).*solution.ions.(['u',l]).*solution.ions.(['Tr',l]);
+    solution.ions.(['qzr',l]) = 1/2*solution.ions.(['M120',l]) - 1/2*solution.ions.(['n',l]).*solution.ions.(['u',l]).*solution.ions.(['Tr',l]);
     % Axial flux of azimuthal heat
-    solution.ions.(['qztheta',l]) = 1/2*solution.ions.(['M102',l]) - 3/2*solution.ions.(['n',l]).*solution.ions.(['u',l]).*solution.ions.(['Ttheta',l]);
+    solution.ions.(['qztheta',l]) = 1/2*solution.ions.(['M102',l]) - 1/2*solution.ions.(['n',l]).*solution.ions.(['u',l]).*solution.ions.(['Ttheta',l]);
 end
    
 
