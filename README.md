@@ -1,6 +1,6 @@
 # AKILES 2D
 
-![DOI](https://zenodo.org/badge/113689280.svg)](https://zenodo.org/badge/latestdoi/113689280)
+[![DOI](https://zenodo.org/badge/113689280.svg)](https://zenodo.org/badge/latestdoi/113689280)
 
 ![Akiles logo](docs/logo.png) 
 
