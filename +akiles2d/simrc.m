@@ -11,7 +11,6 @@ function data = simrc(data)
 
 %% General
 data.akiles2d.simdir = fullfile(pwd,'sims'); % directory where simulation files will be saved
-data.akiles2d.netcurrent = 0; % net electric current density in the plume to solve for
 data.akiles2d.maxiter = 200; % maximum number of iterations to try
 data.akiles2d.tolerance = 1e-6; % norm of errorfcn must be this small to exit solver successfully 
 
@@ -43,6 +42,9 @@ data.guess.ne00p = 0.51; % density of the (vz > 0) electrons at the origin
  
 %% Solver
 data.solver.phibracket = [-10,0.1]; % allowed range to search for phi at each point
+data.solver.errorfcn = 'netcurrent'; % type of additional error to consider: 'netcurrent, 'phiinfty'
+    data.solver.netcurrent = 0; % net electric current density in the plume to solve for, , when errorfcn above is 'netcurrent'
+    data.solver.phiinfty = -4; % value of phi at infinity to solve for, when errorfcn above is 'phiinfty'
 
 %% Postprocessor
 data.postprocessor.postfunctions = {'moments','EEDF'}; % Cell array with the names of postprocessor functions to run after iteration process

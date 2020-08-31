@@ -20,14 +20,14 @@ function test_preprocessor_and_default_simrc(~)
     % Call simrc without arguments
     data = akiles2d.simrc; 
     % Call simrc with arguments
-    data.test = 'just a test string';
+    data.test = 'just a test string'; % adding extra, unused fields raises no error
     data = akiles2d.simrc(data);
     % Call preprocessor without arguments
     data = akiles2d.preprocessor.preprocessor;
     % Call preprocessor with a user simrc file
     data = akiles2d.preprocessor.preprocessor(fullfile('fixtures/example_simrc.m'));
     % Call preprocessor with a data structute
-    data = akiles2d.preprocessor.preprocessor('fixtures/example_simrc.m',struct('testfield',12345));
+    data = akiles2d.preprocessor.preprocessor('fixtures/example_simrc.m',struct('testfield',12345)); % adding extra, unused fields raises no error
 end
 
 %----------------------------------------------------------------------
@@ -118,3 +118,9 @@ end
 function test_akiles(~)
     [data,solution] = akiles2d.akiles2d(fullfile('fixtures/example_simrc.m')); 
 end
+
+%----------------------------------------------------------------------
+
+function test_akiles_phiinfty(~)
+    [data,solution] = akiles2d.akiles2d(fullfile('fixtures/example_simrc2.m')); 
+ end

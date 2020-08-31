@@ -1,10 +1,8 @@
 %{
 Takes a simulation data structure and current solution, and computes the
-quasineutrality error at the axis and the electric current error (at the
-origin).
-
-The electric current error is multiplied by the number of points to keep a
-comparable weight with respect to the quasineutrality error.
+quasineutrality error at the axis and 
+either the electric current error (at the
+origin) or the phiinfty error. 
 
 INPUT
 * data: structure with simulation data
@@ -13,7 +11,8 @@ INPUT
 
 OUTPUT
 * errorfcn: first (n-1) components: quasineutrality error at all points except
-  at infinity (last point). Last (n) component: error due to electric current.  
+  at infinity (last point). Last (n) component: error due to electric current
+  or phiinfty.  
 %}
 function errorfcn = errorfcn(data,solution,ierr)
 
@@ -32,8 +31,14 @@ errorfcn = 1-ne./ni;
 
 %% Electric current error
 infinity = (ierr==npoints);
-if any(infinity)
-    jze = akiles2d.electrons.(data.potential.model).(data.electrons.model).moment(data,solution,1,0,0,1);
-    jzi = akiles2d.ions.(data.potential.model).(data.ions.model).moment(data,solution,1,0,0,1);
-    errorfcn(infinity) = jzi-jze-data.akiles2d.netcurrent; % (weighted) current-free error at origin
-end 
+if strcmp(data.solver.errorfcn,'netcurrent')
+    if any(infinity)
+        jze = akiles2d.electrons.(data.potential.model).(data.electrons.model).moment(data,solution,1,0,0,1);
+        jzi = akiles2d.ions.(data.potential.model).(data.ions.model).moment(data,solution,1,0,0,1);
+        errorfcn(infinity) = jzi-jze-data.solver.netcurrent; % current-free error at origin
+    end 
+elseif strcmp(data.solver.errorfcn,'phiinfty')
+    if any(infinity) 
+        errorfcn(infinity) = solution.phi -data.solver.phiinfty; % phiinfty error
+    end 
+end

@@ -11,10 +11,11 @@ The code allows to compute the electric potential and
 the electron distribution function in a paraxial, collisonless plume and compute any moment of the distribution function.
 The name Akiles2d stands for "Advanced Kinetic Iterative pLasma Expansion Solver 2D."
 
-The first version of this code has been funded by ESA under contract
-4000116180/15/NL/PS. It has been developed by Mario Merino and Javier
+The first version of this code was funded by ESA under contract
+4000116180/15/NL/PS. It was developed by Mario Merino and Javier
 Mauriño, the latter during a research visit to the [EP2](http:\\ep2.uc3m.es)
-group at UC3M, funded by a UK Royal Academy of Engineering Engineering Leaders
+group at UC3M,
+funded by a UK Royal Academy of Engineering Engineering Leaders
 Scholarship (ELAA1516/1/87).
 
 Akiles2d solves iteratively for the electric potential and the EVDF weight in a paraxial, unmagnetized, steady-state plasma plume to satisfy quasineutrality and a global condition on the net electric current. It can be readily used for magnetized plumes in magnetic nozzles as well. After successful convergence to the self-consistent solution, the Akiles2d computes the most frequently used moments of the ion and electron distribution functions.
