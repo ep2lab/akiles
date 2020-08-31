@@ -38,6 +38,7 @@ logger.log(['Structure data saved to ',data.akiles2d.datafile,' successfully.'],
 
 %% Initial guess error and save iteration 0
 solution = data.guess; % take guess as initial solution
+solution.npoints = numel(solution.h);
 
 %% Solver iteration loop
 for iiter = 0:data.akiles2d.maxiter

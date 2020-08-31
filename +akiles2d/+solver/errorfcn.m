@@ -39,6 +39,6 @@ if strcmp(data.solver.errorfcn,'netcurrent')
     end 
 elseif strcmp(data.solver.errorfcn,'phiinfty')
     if any(infinity) 
-        errorfcn(infinity) = solution.phi -data.solver.phiinfty; % phiinfty error
+        errorfcn(infinity) = solution.phi(ierr(infinity)) -data.solver.phiinfty; % phiinfty error
     end 
 end

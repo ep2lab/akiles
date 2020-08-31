@@ -12,10 +12,15 @@ function data = example_simrc2(data)
 data.akiles2d.simdir = tempname; % directory where simulation files will be saved
 
 %% Initial guess
-data.guess = load(fullfile('fixtures/example_guessfile.mat')); % path to file where initial guesses for h,phiz,?? are stored. If empty, default preprocessor values will be used. 
-
+    npoints = 500; % number of points in the solution vector. First point must be origin. Last point must be infinity.
+%Can load guess from file, e.g. data.guess = load(fullfile('simulations/some_guess_file.mat'))
+data.guess.h = [linspace(1,500,npoints-1),Inf].'; % column; independent variable: plume characteristic radius at each test point. The first value must be 1; the final value must be infinity
+data.guess.r = zeros(1,npoints).'; % column; corresponding values of the radius for each test point
+data.guess.phi = linspace(0,-8,npoints).'; % column; potential at each test point. Must be 0 at origin
+data.guess.ne00p = 0.51; % density of the (vz > 0) electrons at the origin
+ 
 %% Solver
 data.solver.phibracket = [-10,0.1]; % allowed range to search for phi at each point
 data.solver.errorfcn = 'phiinfty'; % type of additional error to consider: 'netcurrent, 'phiinfty'
     data.solver.netcurrent = 0; % net electric current density in the plume to solve for, , when errorfcn above is 'netcurrent'
-    data.solver.phiinfty = -4; % value of phi at infinity to solve for, when errorfcn above is 'phiinfty'
+    data.solver.phiinfty = -6; % value of phi at infinity to solve for, when errorfcn above is 'phiinfty'
