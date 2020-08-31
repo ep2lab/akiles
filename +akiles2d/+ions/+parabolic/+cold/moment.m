@@ -45,7 +45,7 @@ if any(r(ipoints)~=0)
 end
 
 %% Compute moment 
-uz = sqrt(chi^2-(2/mu)*phi(ipoints)); % ion velocity
+uz = sqrt(chi^2-(2/mu^2)*phi(ipoints)); % ion velocity
 ni = chi./(uz.*h(ipoints).^2);
 
 if evr == 0 && evtheta == 0 
