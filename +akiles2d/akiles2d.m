@@ -16,7 +16,7 @@ OUTPUT
 function [data,solution] = akiles2d(simrcfile,userdata)
 
 %% Code version (must update manually when codebase changes)
-VERSION = '20171214';
+VERSION = '20200901';
 
 %% Run data preprocessor to prepare data structure
 if ~exist('simrcfile','var')

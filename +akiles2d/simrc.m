@@ -29,7 +29,7 @@ data.ions.mu = Inf; % dimensionless ion mass. Set to Inf for hypersonic limit
 
 %% Electrons 
 data.electrons.model = 'semimaxwellian'; % the electron model to use
-data.electrons.nintegrationpoints = [500,300]; % Number of points to use in E' integration. The first number is for E' less than the a transition value (linspaced points). The second is for E' larger than that (logspaced points).
+data.electrons.nintegrationpoints = [500,300]; % Number of points to use in E' integration. The first number is for E' less than the transition value (linspaced points). The second is for E' larger than that (logspaced points).
 data.electrons.alpha = 1; % filling parameter for doubly-trapped regions
  
 %% Initial guess

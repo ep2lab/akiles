@@ -123,4 +123,4 @@ end
 
 function test_akiles_phiinfty(~)
     [data,solution] = akiles2d.akiles2d(fullfile('fixtures/example_simrc2.m')); 
- end
+end
